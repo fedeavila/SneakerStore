@@ -1,0 +1,61 @@
+﻿@using SneakerStore.ViewModel
+@model SneakerViewModel
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h1>Listado de Zapatillas</h1>
+
+
+<div class=" row">
+    <form method="get" asp-action="Index" asp-asp-controller="Sneakers">
+        <div class="col-6 form-group">
+            <label>Filtrar</label>
+            <input class="form-control" asp-for="filtroMarca" />
+        </div>
+        <button class="btn btn-secondary" type="submit">Filtrar!</button>
+    </form>
+</div>
+
+
+<p>
+    <a asp-action="Create">Nuevo</a>
+</p>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.sneakers[0].Model)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.sneakers[0].Price)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.sneakers[0].Brand)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model.sneakers) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.Model)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Price)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Brand.BrandName)
+            </td>
+            <td>
+                <a asp-action="Edit" asp-route-id="@item.SneakerId">Edit</a> |
+                <a asp-action="Details" asp-route-id="@item.SneakerId">Details</a> |
+                <a asp-action="Delete" asp-route-id="@item.SneakerId">Delete</a>
+            </td>
+        </tr>
+}
+    </tbody>
+</table>
