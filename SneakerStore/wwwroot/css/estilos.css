@@ -1,0 +1,8 @@
+﻿body {
+    font-family: 'Cascadia Code', Consolas, 'Roboto Mono', monospace;
+    /*font-size: 1.1em;*/
+}
+
+.imagen-ajustada {
+    max-width: 100%;
+}

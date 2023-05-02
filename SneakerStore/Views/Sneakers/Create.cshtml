@@ -3,6 +3,7 @@
 @{
     ViewData["Title"] = "Create";
 }
+<link rel="stylesheet" href="~/css/estilos.css" />
 
 <h1>Registrar nuevo elemento de zapatillas...</h1>
 
@@ -31,7 +32,8 @@
                 <span asp-validation-for="Price" class="text-danger"></span>
             </div>
             <div class="form-group">
-                <input type="submit" value="Create" class="btn btn-primary" />
+                <div style="height: 10px;"></div>
+                <input type="submit" value="Crear" class="btn btn-primary" />
             </div>
         </form>
     </div>
@@ -39,7 +41,7 @@
 
 <div>
     <div style="height: 10px;"></div>
-    <a asp-action="Index">Volver</a>
+    <a asp-action="Index">Volver a la lista</a>
 </div>
 
 @section Scripts {

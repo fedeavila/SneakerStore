@@ -3,6 +3,7 @@
 @{
     ViewData["Title"] = "Details";
 }
+<link rel="stylesheet" href="~/css/estilos.css" />
 
 <h1>Detalles...</h1>
 
@@ -20,7 +21,7 @@
             @Html.DisplayNameFor(model => model.Price)
         </dt>
         <dd class = "col-sm-10">
-            @Html.DisplayFor(model => model.Price)
+            $ @Html.DisplayFor(model => model.Price)
         </dd>
         <dt class = "col-sm-2">
             @Html.DisplayNameFor(model => model.Brand)
@@ -31,8 +32,9 @@
     </dl>
 </div>
 <div>
-    <a asp-action="Edit" asp-route-id="@Model?.SneakerId">Editar</a>
+    <div style="height: 10px;"></div>
+    <a class="btn btn-warning" asp-action="Edit" asp-route-id="@Model?.SneakerId">Editar</a>
 
     <div style="height: 10px;"></div>
-    <a asp-action="Index">Volver</a>
+    <a asp-action="Index">Volver a la lista</a>
 </div>

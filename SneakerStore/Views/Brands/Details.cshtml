@@ -3,6 +3,7 @@
 @{
     ViewData["Title"] = "Details";
 }
+<link rel="stylesheet" href="~/css/estilos.css" />
 
 <h1>Detalles</h1>
 
@@ -19,7 +20,7 @@
     </dl>
 </div>
 <div>
-    <a asp-action="Edit" asp-route-id="@Model?.BrandId">Editar</a>
+    <a class="btn btn-warning" asp-action="Edit" asp-route-id="@Model?.BrandId">Editar</a>
     <div style="height: 10px;"></div>
-    <a asp-action="Index">Volver</a>
+    <a asp-action="Index">Volver a la lista</a>
 </div>

@@ -4,8 +4,9 @@
 @{
     ViewData["Title"] = "Index";
 }
+<link rel="stylesheet" href="~/css/estilos.css" />
 
-<h1>Z A P A T I L L A S</h1>
+<h1>Sneakers</h1>
 
 
 <div class=" row">
@@ -25,7 +26,7 @@
 
 <p>
     @*<a asp-action="Create">Crear</a>*@
-    <a class="btn btn-primary" asp-action="Create">Crear</a>
+    <a class="btn btn-primary" asp-action="Create">NUEVA SNEAKER</a>
 </p>
 
 <table class="table">
@@ -44,23 +45,24 @@
         </tr>
     </thead>
     <tbody>
-@foreach (var item in Model.sneakers) {
-        <tr>
-            <td>
-                @Html.DisplayFor(modelItem => item.Model)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.Price)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.Brand.BrandName)
-            </td>
-            <td>
-                <a class="btn btn-warning" asp-action="Edit" asp-route-id="@item.SneakerId">Editar</a>
-                <a class="btn btn-info" asp-action="Details" asp-route-id="@item.SneakerId">Detalles</a>
-                <a class="btn btn-danger" asp-action="Delete" asp-route-id="@item.SneakerId">Eliminar</a>
-            </td>
-        </tr>
-}
+        @foreach (var item in Model.sneakers)
+        {
+            <tr>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Model)
+                </td>
+                <td>
+                    $ @Html.DisplayFor(modelItem => item.Price)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Brand.BrandName)
+                </td>
+                <td>
+                    <a class="btn btn-warning" asp-action="Edit" asp-route-id="@item.SneakerId">Editar</a>
+                    <a class="btn btn-info" asp-action="Details" asp-route-id="@item.SneakerId">Detalles</a>
+                    <a class="btn btn-danger" asp-action="Delete" asp-route-id="@item.SneakerId">Eliminar</a>
+                </td>
+            </tr>
+        }
     </tbody>
 </table>
