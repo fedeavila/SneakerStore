@@ -5,22 +5,26 @@
     ViewData["Title"] = "Index";
 }
 
-<h1>Listado de Zapatillas</h1>
+<h1>ZAPATILLAS</h1>
 
 
 <div class=" row">
     <form method="get" asp-action="Index" asp-asp-controller="Sneakers">
-        <div class="col-6 form-group">
-            <label>Filtrar</label>
+        <div class="col-3 form-group">
+            <label>Filtrar por marca</label>
             <input class="form-control" asp-for="filtroMarca" />
         </div>
-        <button class="btn btn-secondary" type="submit">Filtrar!</button>
+        <button class="btn btn-secondary" type="submit">Filtrar</button>
     </form>
 </div>
 
+<div id="div1"></div>
+<div id="div2"></div>
+<div id="div3"></div>
 
 <p>
-    <a asp-action="Create">Nuevo</a>
+    @*<a asp-action="Create">Crear</a>*@
+    <a class="btn btn-primary" asp-action="Create">Crear</a>
 </p>
 
 <table class="table">
@@ -51,9 +55,9 @@
                 @Html.DisplayFor(modelItem => item.Brand.BrandName)
             </td>
             <td>
-                <a asp-action="Edit" asp-route-id="@item.SneakerId">Edit</a> |
-                <a asp-action="Details" asp-route-id="@item.SneakerId">Details</a> |
-                <a asp-action="Delete" asp-route-id="@item.SneakerId">Delete</a>
+                <a class="btn btn-warning" asp-action="Edit" asp-route-id="@item.SneakerId">Editar</a>
+                <a class="btn btn-info" asp-action="Details" asp-route-id="@item.SneakerId">Detalles</a>
+                <a class="btn btn-danger" asp-action="Delete" asp-route-id="@item.SneakerId">Eliminar</a>
             </td>
         </tr>
 }
