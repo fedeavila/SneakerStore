@@ -24,7 +24,7 @@ Para descargar el archivo utilizando Git, realizá los siguientes pasos:
 ## Requisitos:
 - Debés contar contar con .Net instalado en tu sistema operativo:
 
-![image](https://github.com/fedeavila/Parcial1HDP/assets/68792337/fd6ae805-a3dc-43aa-8edf-c3c3f311381a)
+![image](https://github.com/fedeavila/Parcial1HDP/assets/68792337/f0b1d333-2c36-4de9-b45d-754b8e19add9)
 
 - Si utilizás Windows accedé a este link, descargá e instalá el framework: <code>https://dotnet.microsoft.com/es-es/download</code>
 - Si utilizás Linux podés instalar .Net directamente desde una terminal con el siguiente comando: <code>sudo apt install dotnet-sdk-7.0</code>
