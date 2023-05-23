@@ -27,7 +27,7 @@ Para descargar el archivo utilizando Git, realizá los siguientes pasos:
 <br>
 
 ## 📚 Requisitos:
-Debés contar contar con .NET instalado en tu sistema operativo:
+Debés contar con .NET instalado en tu sistema operativo:
 
 ![image](https://github.com/fedeavila/Parcial1HDP/assets/68792337/f0b1d333-2c36-4de9-b45d-754b8e19add9)
 
