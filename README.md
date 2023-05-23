@@ -18,8 +18,8 @@ El estado del proyecto es finalizado✅ sin embargo estoy abierto a opiniones co
 <br>
 
 ## ℹ️ Guía de instalación
-Para descargar el archivo utilizando Git, realizá los siguientes pasos:
-1) Dentro de tu carpeta de preferencia abrí una consola o terminal.
+Para descargar el proyecto utilizando Git, realizá los siguientes pasos:
+1) Dentro de tu carpeta de preferencia abrí una terminal.
 2) Copia y pegá el siguiente comando: <code>git clone https://github.com/fedeavila/Parcial1HDP.git</code>
 3) Una vez que se complete el clonado podrás ejecutar el proyecto. Desde <b>Visual Studio Community</b> haciendo doble-clic sobre el archivo SneakerStore.sln o desde <b>Visual Studio Code</b>, ingresando a la carpeta SneakerStore y luego en una terminal ejecutar el comando: <code>dotnet run</code>
 
