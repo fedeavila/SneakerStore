@@ -7,4 +7,6 @@ namespace SneakerStore.ViewModel
         public List<Sneaker> sneakers { get; set; } = new List<Sneaker>();
         public string filtroMarca { get; set; }
     }
+
+
 }
