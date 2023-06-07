@@ -12,7 +12,7 @@
 <div class=" row">
     <form method="get" asp-action="Index" asp-asp-controller="Sneakers">
         <div class="col-3 form-group">
-            <label>Filtrar por marca</label>
+            <label>Filtrar por marca:</label>
             <input class="form-control" asp-for="filtroMarca" />
         </div>
 
@@ -33,13 +33,13 @@
     <thead>
         <tr>
             <th>
-                @Html.DisplayNameFor(model => model.sneakers[0].Model)
+                @Html.DisplayNameFor(model => model.sneakers[0].Model):
             </th>
             <th>
-                @Html.DisplayNameFor(model => model.sneakers[0].Price)
+                @Html.DisplayNameFor(model => model.sneakers[0].Price):
             </th>
             <th>
-                @Html.DisplayNameFor(model => model.sneakers[0].Brand)
+                @Html.DisplayNameFor(model => model.sneakers[0].Brand):
             </th>
             <th></th>
         </tr>
