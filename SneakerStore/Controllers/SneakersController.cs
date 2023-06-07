@@ -24,9 +24,18 @@ namespace SneakerStore.Controllers
         {
             IQueryable<Sneaker> query = _context.Sneaker.Include(s => s.Brand);
 
+            //if (!string.IsNullOrEmpty(filtroMarca))
+            //{
+            //    query = query.Where(z =>
+            //        z.Brand.BrandName.ToLower() == filtroMarca.ToLower() ||
+            //        z.Model.ToLower() == filtroMarca.ToLower());
+            //}
+
             if (!string.IsNullOrEmpty(filtroMarca))
             {
-                query = query.Where(z => z.Brand.BrandName.ToLower() == filtroMarca.ToLower());
+                query = query.Where(z =>
+                    z.Brand.BrandName.ToLower().Contains(filtroMarca.ToLower()) ||
+                    z.Model.ToLower().Contains(filtroMarca.ToLower()));
             }
 
             var sneakersVM = new SneakerViewModel()
