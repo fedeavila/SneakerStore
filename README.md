@@ -9,6 +9,15 @@ La aplicación cumple con los siguientes requerimientos:
 - 💾 Utilizar SQLite para persistir los datos.
 - 💄 Customizar utilizando Bootstrap.
 
+<br>
+<b>* ACTUALIZACIÓN *</b>
+
+Se agregaron las siguiente funcionalidades:
+- 🧰 Se implementa la Inyección de Dependencia.
+- 🔍 Se implementa un buscador mejorado: puede buscar por marca, modelo, parte de una palabra y no es case-sensitive.
+- 👮 Se implementa autenticación de usuarios y roles.
+- 💳 Se implementa una funcionalidad de negocio (ventas). 
+
 ![image](https://github.com/fedeavila/Parcial1HDP/assets/68792337/461fbd78-06be-41b1-a4aa-f4018538ac71)
 
 
