@@ -10,7 +10,7 @@ La aplicación cumple con los siguientes requerimientos:
 - 💄 Customizar utilizando Bootstrap.
 
 <br>
-<b>* ACTUALIZACIÓN *</b>
+<b># ACTUALIZACIÓN #</b>
 
 Se agregaron las siguiente funcionalidades:
 - 🧰 Se implementa la Inyección de Dependencias.
