@@ -19,18 +19,19 @@
                 <label asp-for="BrandId" class="control-label"></label>
                 <select asp-for="BrandId" class="form-control" asp-items="ViewBag.BrandId"></select>
             </div>
-
+            <br />
             <div class="form-group">
                 <label asp-for="Model" class="control-label"></label>
                 <input asp-for="Model" class="form-control" />
                 <span asp-validation-for="Model" class="text-danger"></span>
             </div>
-            
+            <br />
             <div class="form-group">
                 <label asp-for="Price" class="control-label"></label>
                 <input asp-for="Price" class="form-control" />
                 <span asp-validation-for="Price" class="text-danger"></span>
             </div>
+            <br />
             <div class="form-group">
                 <div style="height: 10px;"></div>
                 <input type="submit" value="Crear" class="btn btn-primary" />
